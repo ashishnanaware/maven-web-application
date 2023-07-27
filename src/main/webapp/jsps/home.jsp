@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>MithunTechnologies- Home Page</title>
+<title>MithunTechnologies- QA page</title>
 <link href="images/mithunlogo.jpg" rel="icon">
 </head>
 </head>
@@ -13,6 +13,7 @@
 <h1 align="center"> Mithun Technologies- Very Good Training center for DevOps with AWS in Bangalore India and also for Job Assitance Job Support also...Teaching Real Time scnerios</h1>
 <hr>
 <br>
+        
 	<h1><h3> Server Side IP Address </h3><br>
 
 <% 
