@@ -1,5 +1,5 @@
 node {
-    currentBuild.displayName = "fooName"
+    currentBuild.displayName = "DEV-${BUILD_NUMBER}"
     def mvnHome = tool name : "maven3.9.3"
     properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), pipelineTriggers([pollSCM('* * * * *')])])
     stage('Checkoutcode') {
