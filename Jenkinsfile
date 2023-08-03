@@ -6,7 +6,7 @@ node {
     }
     //build the source code 
     stage('Build') {
-        sh "mvnHome/bin/mvn clean package"
+        sh "$mvnHome/bin/mvn clean package"
     }
     stage('DeployToTomcat') {
         sshagent(['4290e62f-594f-4ada-b0e7-a552d89f54bf']) {
