@@ -1,5 +1,7 @@
 node {
     def mvnHome = tool name : "maven3.9.3"
+    properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
+
     stage('Checkoutcode') {
         git branch: 'dev', credentialsId: 'a2473b31-65cb-4f4c-8231-f77a4469683e', url: 'https://github.com/ashishnanaware/maven-web-application.git'        
     }
